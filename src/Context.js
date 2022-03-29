@@ -8,11 +8,11 @@ export const ChannelsContext = createContext(null);
  * Pusher configuration
  */
 const pusherConfig = {
-  key: "d33e3195ea813ac4c885",
+  key: "e6c4bdb838afcce8584c",
   cluster: "us2",
   // auth endpoint for private channels
   // e.g. for Laravel https://example.com/api/broadcasting/auth
-  authEndpoint: "http://localhost:8000/broadcasting/auth",
+  authEndpoint: "https://dev-mariner-340013.uc.r.appspot.com/broadcasting/auth",
 };
 export const ChannelProvider = ({ children, authUser, authToken }) => {
   const [channels, setChannels] = useState(null);

@@ -9,7 +9,7 @@ function App({ token }) {
     const getUserInfo = async () => {
       try {
         const result = await axios.request({
-          baseURL: "http://localhost:8000",
+          baseURL: "https://dev-mariner-340013.uc.r.appspot.com",
           headers: {
             Accept: "application/json",
             Authorization: `Bearer ${token}`,
